@@ -63,31 +63,3 @@ The `iterators.hpp` file contains classes for different tree traversal methods. 
 
 The `test.cpp` file contains tests to ensure the correctness of the k-ary tree and its components. The tests are written using the Doctest framework.
 
-## Examples
-
-Here are some example usages of the k-ary tree and Complex class:
-
-```cpp
-#include "tree.hpp"
-#include "complex.hpp"
-#include <iostream>
-
-int main() 
-{
-    Tree<int> binaryTree(2);
-    binaryTree.insert(1);
-    binaryTree.insert(2);
-    binaryTree.insert(3);
-
-    for (auto it = binaryTree.begin_preorder(); it != binaryTree.end_preorder(); ++it) {
-        std::cout << *it << " ";
-    }
-    std::cout << std::endl;
-
-    Complex c1(1, 2);
-    Complex c2(3, 4);
-    Complex c3 = c1 + c2;
-    std::cout << c3 << std::endl;
-
-    return 0;
-}
