@@ -28,8 +28,7 @@ To build and run the project, follow these steps:
 
 1. **Clone the repository**:
     ```sh
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/elyasafko/SP2---EX4.git
     ```
 
 2. **Install SFML**:
@@ -37,7 +36,7 @@ To build and run the project, follow these steps:
 
 3. **Compile the project**:
     ```sh
-    g++ -std=c++17 -o kary_tree main.cpp complex.cpp test.cpp -I. -lsfml-graphics -lsfml-window -lsfml-system
+    make all
     ```
 
 4. **Run the executable**:
